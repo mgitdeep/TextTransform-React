@@ -1,3 +1,5 @@
-body {
-    display: none;
+.myclass {
+    text-align: center;
+    background-color: aquamarine;
+    padding: 1rem;
 }
