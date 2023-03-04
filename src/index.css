@@ -41,8 +41,12 @@ header {
     color: #333;
     border-radius: 15px;
     padding: 40px 50px;
-    margin: 20px 0;
+    margin: 20px 100px;
     position: relative;
+    /* width: 60%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .card.reverse {
