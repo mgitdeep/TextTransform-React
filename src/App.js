@@ -8,10 +8,12 @@ function App() {
         <>
             <Navbar title="TextTransform" aboutText="About" contactUs="Contact"/>
             <div className="container my-5">
-                <TextForm heading="Enter the text to analyze"/>
+                <TextForm heading="Enter the text to analyze below"/>
             </div>
         </>
     )
 }
 
-export default App
+
+export default App;
+  
