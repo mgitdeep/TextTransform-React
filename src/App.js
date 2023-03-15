@@ -27,6 +27,12 @@ function App() {
             document.body.style.backgroundColor = "#061b35"
 
             showAlert(": Dark Mode has been enabled!", "success")
+            setInterval(() => {
+                document.title = "Install Now!"
+            }, 2000);
+            setInterval(() => {
+                document.title = "Install the App!"
+            }, 1500);
         } 
         else {
             setMode('light')
