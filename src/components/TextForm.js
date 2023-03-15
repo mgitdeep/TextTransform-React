@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 
+
 export default function TextForm(props) {
 
   const [ text, setText ] = useState('')
@@ -40,7 +41,7 @@ export default function TextForm(props) {
 
   return (
     <>
-    <h1>{props.heading}</h1>
+    <h1 style={{color: `${props.mode}` === 'dark'?'white':'black'}}>{props.heading}</h1>
       <div className="mb-3">
         <label htmlFor="myBox" className="form-label">
           
@@ -52,6 +53,7 @@ export default function TextForm(props) {
           rows="9"
           value={text}
           onChange={handleOnchange}
+          style={{backgroundColor: `${props.mode}`==='dark'?'#2c2f32':'white', color: props.mode==='dark'?'white':'black' }}
         ></textarea>
 
         <button className="btn btn-primary my-3 mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
@@ -61,13 +63,13 @@ export default function TextForm(props) {
         <button className="btn btn-primary my-3 mx-2" onClick={removeSpace}>Remove Extra Spaces</button>
       </div>
 
-      <div className="container">
+      <div className="container" style={{color: props.mode==='dark'?'white':'black'}}>
         <h2>Your text summary</h2>
         <hr />
         <p> <b>{text.split(' ').length} words and {text.length} characters </b></p>
         <p> {text.split(' ').length * 0.008} Minutes read</p>
         <h3>Preview</h3>
-        <p>{text}</p>
+        <p>{text.length>0 ? text : "Enter something in the textbox above to preview it here!"}</p>
       </div>
     </>
   );
