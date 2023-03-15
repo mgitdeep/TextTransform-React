@@ -26,7 +26,7 @@ const Navbar = (props) => {
             </ul>
             <div className="form-check form-switch mx-3">
                 <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" id="flexSwitchCheckDefault"/>
-                <label className={`form-check-label text-${props.mode==='dark'?'white':'black'}`} htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
+                <label className={`form-check-label text-${props.mode==='dark'?'white':'black'}`} htmlFor="flexSwitchCheckDefault">{`${props.mode}`==='dark'?'Disable Dark Mode':'Enable Dark Mode'}</label>
             </div>
             {/* <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
