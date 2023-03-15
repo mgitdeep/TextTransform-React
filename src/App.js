@@ -1,6 +1,6 @@
-import About from "./components/About";
+// import About from "./components/About";
 import Navbar from "./components/Navbar"
-// import TextForm from "./components/TextForm"
+import TextForm from "./components/TextForm"
 
 
 function App() {
@@ -8,11 +8,11 @@ function App() {
     return (
         <>
             <Navbar title="TextTransform" aboutText="About" contactUs="Contact"/>
-            {/* <div className="container my-5">
+            <div className="container my-5">
                 <TextForm heading="Enter the text to analyze below"/>
-            </div> */}
+            </div>
 
-            <About />
+            {/* <About /> */}
         </>
     )
 }

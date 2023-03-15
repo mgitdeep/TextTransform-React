@@ -1,4 +1,4 @@
-// import { clear } from "@testing-library/user-event/dist/clear";
+
 import React, { useState } from "react";
 
 export default function TextForm(props) {
@@ -6,33 +6,31 @@ export default function TextForm(props) {
   const [ text, setText ] = useState('')
 
   const handleUpClick = (e) => {
-    // console.log('Button was clicked')
-    // console.log(e.target)
-    // setText("You've just clicked the button!")
-    // console.log(text)
     let newText = text.toUpperCase()
     setText(newText)
-    // console.log(text)
-    // console.log(newText)
   }
+
   const handleLowClick = (e) => {
-    // console.log('Button was clicked')
-    // console.log(e.target)
-    // // setText("You've just clicked the button!")
-    // console.log(text)
     let newText = text.toLowerCase()
     setText(newText)
-    // console.log(text)
-    // console.log(newText)
   }
+
   const handleOnchange = (e) => {
-    console.log('On change')
-    console.log(e.target.value)
+    // console.log('On change')
+    // console.log(e.target.value)
     setText(e.target.value)
   }
+
   const clearText = () => {
     let emptyText = text.slice(-1, 0)
     setText(emptyText)
+  }
+
+  const copyText = () => {
+    let allText = document.getElementById('myBox')
+    console.log(allText)
+    console.log(allText.value)
+    navigator.clipboard.writeText(allText.value)
   }
 
   return (
@@ -54,6 +52,7 @@ export default function TextForm(props) {
         <button className="btn btn-primary my-3 mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
         <button className="btn btn-primary my-3 mx-2" onClick={handleLowClick}>Convert to Lowercase</button>
         <button className="btn btn-primary my-3 mx-2" onClick={clearText}>Clear Text</button>
+        <button className="btn btn-primary my-3 mx-2" onClick={copyText}>Copy Text</button>
       </div>
 
       <div className="container">
