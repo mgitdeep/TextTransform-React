@@ -43,6 +43,7 @@ export default function TextForm(props) {
     setText(newText.join(" "))
     props.showAlert(": Extra spaces removed!", "success");
   }
+  console.log(props.mode)
 
   return (
     <>
@@ -71,7 +72,8 @@ export default function TextForm(props) {
       <div className="container" style={{color: props.mode==='dark'?'white':'black'}}>
         <h2>Your text summary</h2>
         <hr />
-        <p> <b>{text.split(' ').length} words and {text.length} characters </b></p>
+        {/* <p> <b>{text.split(' ').length} words and {text.length} characters </b></p> */}
+        <p>{text.trim() === '' ? 0 : text.match(/\S+/g).length} words and {text.replace(/\s+/g, '').length} characters</p>
         <p> {text.split(' ').length * 0.008} Minutes read</p>
         <h3>Preview</h3>
         <p>{text.length>0 ? text : "Enter something in the textbox above to preview it here!"}</p>
