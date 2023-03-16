@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/TextTransform-React/static/js/main.ef700b18.js",
+    "main.js": "/TextTransform-React/static/js/main.5f60231c.js",
     "index.html": "/TextTransform-React/index.html",
-    "main.ef700b18.js.map": "/TextTransform-React/static/js/main.ef700b18.js.map"
+    "main.5f60231c.js.map": "/TextTransform-React/static/js/main.5f60231c.js.map"
   },
   "entrypoints": [
-    "static/js/main.ef700b18.js"
+    "static/js/main.5f60231c.js"
   ]
 }
