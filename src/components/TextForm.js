@@ -32,8 +32,8 @@ export default function TextForm(props) {
 
   const copyText = () => {
     let allText = document.getElementById('myBox')
-    console.log(allText)
-    console.log(allText.value)
+    // console.log(allText)
+    // console.log(allText.value)
     navigator.clipboard.writeText(allText.value)
     props.showAlert(": Text copied to clipboard!", "success");
   }

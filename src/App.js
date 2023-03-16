@@ -1,11 +1,11 @@
 
 import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 import Alerts from "./components/Alerts";
 import Navbar from "./components/Navbar"
 import TextForm from "./components/TextForm"
-import About from "./components/About";
-import Contact from "./components/Contact";
+// import About from "./components/About";
+// import Contact from "./components/Contact";
 
 
 function App() {
@@ -52,18 +52,18 @@ function App() {
 
             <Alerts alert={alert}/>
 
-            {/* <div className="container my-5">
+            <div className="container my-5">
                 <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode= {mode}/>
-            </div> */}
+            </div>
 
             {/* <About /> */}
-            <div className="container my-4">
+            {/* <div className="container my-4">
             <Routes>
                 <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode= {mode}/>} />
                 <Route path="/about" element={<About mode= {mode}/>} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
-            </div>
+            </div> */}
         </>
     )
 }
