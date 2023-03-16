@@ -26,7 +26,7 @@ export default function About(props) {
     //   }
         
     // }
-    console.log(props.mode)
+    // console.log(props.mode)
     
   return (
     <>

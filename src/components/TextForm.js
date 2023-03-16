@@ -43,7 +43,7 @@ export default function TextForm(props) {
     setText(newText.join(" "))
     props.showAlert(": Extra spaces removed!", "success");
   }
-  console.log(props.mode)
+  // console.log(props.mode)
 
   return (
     <>
