@@ -6,7 +6,7 @@ const Navbar = (props) => {
     <nav className= {`navbar navbar-expand-lg bg-${props.mode}`} >
         <div className="container-fluid">
             {/* <Link className="navbar-brand" to="/" style={{color: `${props.mode}` === 'dark'?'white':'black'}}>{props.title}</Link> */}
-            <a className="navbar-brand" href="/" style={{color: `${props.mode}` === 'dark'?'white':'black'}}>{props.title}</a>
+            <a className="navbar-brand" href="#" style={{color: `${props.mode}` === 'dark'?'white':'black'}}>{props.title}</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" style={{backgroundColor: 'white'}}></span>
             </button>
@@ -15,7 +15,7 @@ const Navbar = (props) => {
 
                 <li className="nav-item">
                 {/* <Link className="nav-link active" aria-current="page" to="/" style={{color: `${props.mode}` === 'dark'?'white':'black'}}>Home</Link> */}
-                <a className="nav-link active" aria-current="page" href="/" style={{color: `${props.mode}` === 'dark'?'white':'black'}}>Home</a>
+                <a className="nav-link active" aria-current="page" href="#" style={{color: `${props.mode}` === 'dark'?'white':'black'}}>Home</a>
                 </li>
 
                 {/* <li className="nav-item"> */}
